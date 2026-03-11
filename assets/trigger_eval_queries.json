@@ -1,0 +1,66 @@
+[
+  {
+    "query": "turn this landing page into a weird but beautiful youtube poop short and render it with ffmpeg",
+    "should_trigger": true
+  },
+  {
+    "query": "i pasted some code below — make an absurd little montage out of it like the repo is having a breakdown",
+    "should_trigger": true
+  },
+  {
+    "query": "can you make a cursed trailer from this spec doc with more personality",
+    "should_trigger": true
+  },
+  {
+    "query": "make me a hyper-edited meme video from this article url",
+    "should_trigger": true
+  },
+  {
+    "query": "take these notes and produce a short self-aware ai remix video",
+    "should_trigger": true
+  },
+  {
+    "query": "i don't have source files, just make a polished youtube poop about startup life",
+    "should_trigger": true
+  },
+  {
+    "query": "turn this transcript into a fast absurd montage with readable captions",
+    "should_trigger": true
+  },
+  {
+    "query": "render a chaotic ffmpeg short from this README, but make it aesthetically pleasing",
+    "should_trigger": true
+  },
+  {
+    "query": "trim the silence from this podcast episode and export mp3",
+    "should_trigger": false
+  },
+  {
+    "query": "please add subtitles to this interview video",
+    "should_trigger": false
+  },
+  {
+    "query": "make a normal product demo from our homepage screenshots",
+    "should_trigger": false
+  },
+  {
+    "query": "write a python script that uses ffmpeg to resize a batch of videos",
+    "should_trigger": false
+  },
+  {
+    "query": "summarize this webpage into bullet points",
+    "should_trigger": false
+  },
+  {
+    "query": "create a calm explainer animation for our quarterly results",
+    "should_trigger": false
+  },
+  {
+    "query": "clean up the audio in this recording and remove background noise",
+    "should_trigger": false
+  },
+  {
+    "query": "i need a standard youtube intro with logo and slogan",
+    "should_trigger": false
+  }
+]

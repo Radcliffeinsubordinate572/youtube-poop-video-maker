@@ -1,0 +1,170 @@
+[
+  {
+    "id": "cathedral-glitch",
+    "name": "Cathedral Glitch",
+    "one_sentence_direction": "Treat the material like a sacred object that keeps breaking into ecstatic autocomplete.",
+    "palette": "Midnight blues, pearl whites, faint crimson accents, luminous highlights.",
+    "typography": "One stately serif for titles and one clean sans-serif for captions.",
+    "motion": "Slow push-ins interrupted by sudden micro-jitters and elastic smash-zooms.",
+    "transitions": "Dip-to-white, frozen frames, abrupt hard cuts after solemn holds.",
+    "audio": "Reverent pads, choir-like swells, pitch dives, deep impact hits, controlled reverb.",
+    "signature_gags": [
+      "serious titles that collapse into repeated fragments",
+      "angelic audio under ridiculous phrases",
+      "freeze-frame revelations"
+    ],
+    "works_well_for": ["text", "none", "mixed", "ai-self-reflection"],
+    "guardrails": [
+      "Keep layouts symmetrical before breaking them.",
+      "Use glow sparingly.",
+      "Do not flood the frame with more than one gag layer at a time."
+    ]
+  },
+  {
+    "id": "browser-baroque",
+    "name": "Browser Baroque",
+    "one_sentence_direction": "Stage webpages and documents like ornate palace rooms full of tabs, callouts, and petty chaos.",
+    "palette": "Cream, cobalt, chrome, soft graphite, occasional gold accents.",
+    "typography": "UI sans-serif paired with monospaced annotations.",
+    "motion": "Window tiling, scroll whips, cursor choreography, graceful panel slides.",
+    "transitions": "Tab pops, masked wipes, layered zoom-ins, scroll snaps.",
+    "audio": "Glossy click sounds, polite notification chimes, sly percussion, page-flip swishes.",
+    "signature_gags": [
+      "too many tabs entering in rhythm",
+      "buttons becoming punchlines",
+      "scrolling past the important line and snapping back"
+    ],
+    "works_well_for": ["url", "webpage", "document", "mixed"],
+    "guardrails": [
+      "Limit simultaneous windows to three readable layers.",
+      "Keep cursor motion elegant rather than frantic.",
+      "Use whitespace to preserve premium visual feel."
+    ]
+  },
+  {
+    "id": "terminal-confessional",
+    "name": "Terminal Confessional",
+    "one_sentence_direction": "Make the code feel like an intimate, slightly guilty monologue delivered through terminals and stack traces.",
+    "palette": "Charcoal, phosphor green, cool cyan, occasional warning amber.",
+    "typography": "Single monospaced family with bold weight changes and carefully sized annotations.",
+    "motion": "Cursor pulses, token punch-ins, terminal reveals, restrained CRT-like drift.",
+    "transitions": "Hard cuts, line wipes, glitch blinks, command-enter flashes.",
+    "audio": "Mechanical key taps, fan hum, subtle digital warble, low dry impacts.",
+    "signature_gags": [
+      "error messages treated like dramatic confessions",
+      "variable names looped as mantras",
+      "terminal prompts answering each other"
+    ],
+    "works_well_for": ["code", "logs", "cli", "ai-self-reflection"],
+    "guardrails": [
+      "Keep code large enough to read on a laptop screen.",
+      "Do not overuse CRT effects.",
+      "Use one accent color for warnings and preserve hierarchy."
+    ]
+  },
+  {
+    "id": "kinetic-caption-ballet",
+    "name": "Kinetic Caption Ballet",
+    "one_sentence_direction": "Let typography perform the joke with elegant timing, sharp emphasis, and choreographed movement.",
+    "palette": "High-contrast neutrals with one vivid accent family chosen per render.",
+    "typography": "One expressive display face plus one highly legible sans-serif for body captions.",
+    "motion": "Word-by-word entrances, phrase rebounds, tracked pans, rhythmic scaling, disciplined spacing.",
+    "transitions": "Clean cuts, masked type reveals, shape wipes, occasional snap zoom.",
+    "audio": "Speech-forward mix with clicky transients, sync hits, and soft bass punctuation.",
+    "signature_gags": [
+      "a single word suddenly becoming huge",
+      "captions contradicting the narration",
+      "the same phrase returning in different emotional registers"
+    ],
+    "works_well_for": ["text", "transcript", "none", "mixed"],
+    "guardrails": [
+      "Never put more than one long sentence on screen at once.",
+      "Break lines for rhythm, not just width.",
+      "Let blank space breathe between dense moments."
+    ]
+  },
+  {
+    "id": "pastel-panic",
+    "name": "Pastel Panic",
+    "one_sentence_direction": "Wrap the absurdity in soft, cute, polished surfaces until the emotional instability becomes the joke.",
+    "palette": "Powder pink, mint, lavender, butter yellow, off-white, selective red warning pops.",
+    "typography": "Rounded sans-serif for body text with one playful display face for emphasis.",
+    "motion": "Bouncy slides, sticker-like pops, floaty layers, sudden nervous zooms.",
+    "transitions": "Soft wipes, sticker pops, ripple reveals, quick squash-and-stretch cuts.",
+    "audio": "Toy-like plucks, gentle sparkle hits, sudden bass drops, cute sounds used with ironic timing.",
+    "signature_gags": [
+      "pleasant visuals carrying existential lines",
+      "tiny reaction stickers amplifying serious claims",
+      "sweet pauses before an aggressive cut"
+    ],
+    "works_well_for": ["text", "personal", "none", "mixed"],
+    "guardrails": [
+      "Do not let the palette become washed out.",
+      "Reserve harsh red for one or two shock moments.",
+      "Maintain contrast for all captions."
+    ]
+  },
+  {
+    "id": "vhs-velvet",
+    "name": "VHS Velvet",
+    "one_sentence_direction": "Use tasteful analog decay and warm nostalgia to make the nonsense feel oddly luxurious.",
+    "palette": "Warm blacks, faded magenta, tobacco brown, oxidized teal, soft cream.",
+    "typography": "Condensed sans-serif with occasional retro lower-thirds.",
+    "motion": "Slow analog drift, gentle zooms, tape wobble, frame holds, sudden reverse stabs.",
+    "transitions": "Tape glitches, dropouts, burn-ins, noisy cuts, occasional dissolve.",
+    "audio": "Tape hiss, muffled kicks, slowed stingers, detuned music fragments.",
+    "signature_gags": [
+      "over-serious retro titles",
+      "freeze-frames that warp slightly",
+      "nostalgic treatment applied to completely unserious material"
+    ],
+    "works_well_for": ["video", "archive", "mixed", "none"],
+    "guardrails": [
+      "Keep the analog texture subtle enough that text stays readable.",
+      "Avoid stacking multiple noise layers.",
+      "Use blur and softness only on selected beats."
+    ]
+  },
+  {
+    "id": "keynote-meltdown",
+    "name": "Keynote Meltdown",
+    "one_sentence_direction": "Start with high-end presentation polish and let the deck slowly unravel into beautiful sabotage.",
+    "palette": "White, graphite, electric blue, restrained coral, polished gradients.",
+    "typography": "Modern geometric sans-serif with presentation-style hierarchy.",
+    "motion": "Smooth deck transitions, chart zooms, clean panel builds, then increasingly unhinged interruptions.",
+    "transitions": "Slide pushes, elegant fades, x/y axis wipes, then sudden hard cuts.",
+    "audio": "Corporate sting beds, bright UI ticks, then warped drops and exaggerated whooshes.",
+    "signature_gags": [
+      "charts treated as emotional outbursts",
+      "bullet points turning accusatory",
+      "clean slides interrupted by feral captions"
+    ],
+    "works_well_for": ["webpage", "document", "text", "pitch", "mixed"],
+    "guardrails": [
+      "Keep the opening genuinely polished.",
+      "Escalate sabotage gradually.",
+      "Preserve alignment and grid discipline until the break point."
+    ]
+  },
+  {
+    "id": "opera-of-errors",
+    "name": "Opera of Errors",
+    "one_sentence_direction": "Edit the material like a prestige trailer for a catastrophic misunderstanding.",
+    "palette": "Black, silver, deep red, storm gray, hard white highlights.",
+    "typography": "Cinematic serif titles with concise sans-serif support captions.",
+    "motion": "Dramatic punch-ins, slow-motion holds, black-frame beats, decisive crash zooms.",
+    "transitions": "Trailer-style hits, impact cuts, long silences, title cards, dramatic fades to black.",
+    "audio": "Orchestral booms, trailer braams, sudden silence, whispered lines, over-serious crescendos.",
+    "signature_gags": [
+      "one tiny detail framed as destiny",
+      "dead-serious title cards for trivial problems",
+      "abrupt silence after maximal hype"
+    ],
+    "works_well_for": ["none", "text", "mixed", "ai-self-reflection"],
+    "guardrails": [
+      "Use black frames sparingly.",
+      "Let the trailer logic stay readable.",
+      "Do not overfill every beat with impacts."
+    ]
+  }
+]
