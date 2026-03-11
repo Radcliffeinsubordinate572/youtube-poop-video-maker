@@ -2,6 +2,9 @@
 
 Single-skill package for `youtube-poop-video-maker`.
 
+Repo URL:
+- `https://github.com/DenisSergeevitch/youtube-poop-video-maker`
+
 Skill entrypoint:
 - `SKILL.md`
 
@@ -49,13 +52,13 @@ Requirements:
 ### Codex
 
 ```bash
-mkdir -p ~/.codex/skills && rm -rf ~/.codex/skills/youtube-poop-video-maker && cp -R /path/to/youtube-poop-video-maker ~/.codex/skills/youtube-poop-video-maker
+git clone https://github.com/DenisSergeevitch/youtube-poop-video-maker.git /tmp/youtube-poop-video-maker && mkdir -p ~/.codex/skills && rm -rf ~/.codex/skills/youtube-poop-video-maker && cp -R /tmp/youtube-poop-video-maker ~/.codex/skills/youtube-poop-video-maker
 ```
 
 ### Claude Code
 
 ```bash
-mkdir -p ~/.claude/skills && rm -rf ~/.claude/skills/youtube-poop-video-maker && cp -R /path/to/youtube-poop-video-maker ~/.claude/skills/youtube-poop-video-maker
+git clone https://github.com/DenisSergeevitch/youtube-poop-video-maker.git /tmp/youtube-poop-video-maker && mkdir -p ~/.claude/skills && rm -rf ~/.claude/skills/youtube-poop-video-maker && cp -R /tmp/youtube-poop-video-maker ~/.claude/skills/youtube-poop-video-maker
 ```
 
 ## Quick Examples
