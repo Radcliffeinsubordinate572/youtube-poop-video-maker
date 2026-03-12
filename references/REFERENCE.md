@@ -1,312 +1,261 @@
 # Reference Guide
 
-This file expands the main skill instructions with material-specific tactics and deeper style direction.
+This guide expands the main skill with a stronger mood target, scene design patterns, and anti-cartoon guardrails.
 
-## Core principle
+## The target feel
 
-A strong YouTube poop is not random noise. The best results feel like **designed instability**:
+The strongest outputs in this category are not random noise. They feel like **designed instability**:
 
-- the premise is clear,
-- the joke escalates in a controlled way,
-- the style is recognizable,
-- the frame stays readable,
-- and the ending lands cleanly.
+- the opening image is immediately legible
+- the piece has an emotional claim, not just edits
+- scenes change often
+- the palette is controlled
+- the weirdness escalates in waves
+- the final beat lands like a thought, not an accident
 
-A useful visual rule of thumb is **70 / 20 / 10**:
+A good visual rule is **70 / 20 / 10**:
 
-- **70% stable base** — the main image, text block, or layout grid
-- **20% active motion** — zooms, cursor moves, reveals, wipes
-- **10% disruption** — the actual glitch, interruption, punchline, or rupture
+- **70% stable base** — the main frame, text block, UI panel, code card, or image crop
+- **20% active motion** — zooms, cursor movement, scrolls, wipes, card builds
+- **10% rupture** — the glitch, dropout, stutter, warning, or contradiction
 
-If every layer is screaming at once, the result feels cheap rather than intentional.
+When every layer screams, the result looks cheap. Keep a stable frame to violate.
 
-## Material tactics by input type
+## Why simpler prompts can outperform over-specified skills
+
+A free-form prompt like “use whatever resources you like” often produces more creative results because it gives the agent permission to invent support scenes. Preserve that freedom here.
+
+This skill should therefore:
+
+- invent bridge scenes even when they were not explicitly requested
+- use the random blueprint as a mood lens rather than rigid template matching
+- prefer scene abundance over one long overworked sequence
+- let the “personal spin” appear in captions, voice, and framing decisions
+
+## Scene architecture
+
+Think in terms of a **scene swarm** rather than a short traditional edit.
+
+Useful scene classes:
+
+### 1) Opener scenes
+
+Purpose: make the premise feel immediate in under ~1.2 seconds.
+
+Good opener types:
+
+- warning card
+- terminal boot
+- hard title over black
+- browser frozen at the funniest region
+- whispered subtitle over near-darkness
+- lower-third with no context yet
+
+### 2) Anchor scenes
+
+Purpose: clearly show what the video is about.
+
+Good anchor scenes:
+
+- readable source crop
+- terminal confession
+- token stream
+- headline board
+- code close-up
+- document heading frame
+- dashboard counter
+- attention-map or diagram view
+
+### 3) Bridge scenes
+
+Purpose: make the edit feel rich and alive without needing new literal information.
+
+Good bridge scenes:
+
+- static burst
+- cursor hold
+- freeze zoom
+- one-line subtitle card
+- black-frame whisper
+- notification storm
+- progress bar
+- VHS or recording timestamp
+
+### 4) Break scenes
+
+Purpose: reset the eye and ear.
+
+Good break scenes:
+
+- almost-silent subtitle hold
+- empty UI panel
+- frozen browser with cursor idle
+- single sentence on a dark field
+
+### 5) Climax scenes
+
+Purpose: peak the contradiction without destroying legibility.
+
+Good climax scenes:
+
+- multi-panel stack
+- contradiction slam
+- chorus subtitle wall
+- dense lower-third overload
+- final dashboard redline
+
+### 6) Button scenes
+
+Purpose: end decisively.
+
+Good button scenes:
+
+- deadpan freeze-frame
+- collapse to cursor
+- soft failure dialog
+- final aphorism title card
+- abrupt audio cut on a single line
+
+## How many scenes is enough?
+
+This skill should bias upward.
+
+For a piece around 30–35 seconds, a good default is:
+
+- 1 opener
+- 5–7 anchor scenes
+- 2–4 bridge scenes
+- 1 break
+- 1 climax
+- 1 button
+
+That usually lands around **11–15 scenes**.
+
+If the source is thin, do not reduce the count. Invent support scenes instead.
+
+## Material-specific guidance
 
 ### Text only
 
-Text-only prompts can still produce excellent results when typography becomes the main actor.
+The failure mode is “animated essay paragraph.” Avoid that.
 
-Best tactics:
+Use:
 
-- Break text into short repeatable phrases.
-- Use one or two memorable fragments as refrain material.
-- Alternate full-frame statement cards with smaller callout captions.
-- Add symbolic support imagery rather than trying to literalize every line.
-- Let voice and text disagree slightly for comedic tension.
-
-Avoid:
-
-- paragraph-sized caption blocks
-- constant full-speed motion
-- captions that enter before the viewer can read the previous one
+- short caption cards
+- one repeated line with mutation
+- a terminal or browser wrapper
+- subtitles that contradict the main line
+- symbolic UI or diagram scenes
 
 ### Webpages and URLs
 
-Treat the page as both source material and set design.
+The failure mode is “screen recording with effects.” Avoid that.
 
-Best tactics:
+Use:
 
-- Use hero sections, headings, buttons, testimonials, and fine print as recurring visual motifs.
-- Crop into the page’s strongest compositional regions.
-- Use cursor motion deliberately, almost like choreography.
-- Repeat one suspicious or funny phrase three times max, each time framed differently.
-- Reveal contradictions through zoomed callouts and scroll snaps.
+- hero section as one anchor
+- CTA or pricing block as another anchor
+- crop-ins rather than constant full-page views
+- browser chrome as framing
+- reaction subtitles or warning straps
+- invented transition cards that borrow the page typography
 
-Avoid:
+### Code
 
-- static full-page screenshots held for long durations
-- showing too many tabs or windows at once
-- tiny unreadable body text used as joke setup
+The failure mode is “tiny code under heavy glitch.” Avoid that.
 
-### Code and developer material
+Use:
 
-Code should feel tactile and legible.
-
-Best tactics:
-
-- Show readable snippets, not entire files.
-- Use terminals, stack traces, logs, and comments as rhythm material.
-- Turn variable names or error phrases into chorus captions.
-- Use cursor placement and line highlights to direct attention.
-- Pair clean code crops with one strong monospaced type treatment.
-
-Avoid:
-
-- CRT and glitch overlays on every shot
-- unreadably small syntax screenshots
-- purely decorative code that never connects to the joke
-
-### Audio-led inputs
-
-When audio is the strongest source, make the voice or sound the backbone.
-
-Best tactics:
-
-- build captions tightly around rhythm and key words
-- use waveform or frequency graphics only as support
-- cut visuals on consonants, pauses, or repeated phrases
-- reserve pitch shifts for specific punch moments
-
-Avoid:
-
-- waveform-only visuals for the entire runtime
-- overprocessed speech that becomes unintelligible
+- readable code cards
+- terminal panes
+- stack traces and logs as chorus material
+- cursor motion and line emphasis
+- variable names or comments as refrain text
+- synthesized system dialogs or compilation counters
 
 ### No source material
 
-No source does not mean no concept.
+The failure mode is “abstract motion wallpaper.” Avoid that.
 
-Best tactics:
+Create a full fake ecosystem:
 
-- Create a strong thesis sentence first.
-- Use one repeated phrase or symbol as the anchor.
-- Build visuals from type, grids, gradients, simple icons, and mock interfaces.
-- Use sound design and pacing to imply narrative progression.
-- Let the style blueprint do most of the world-building.
+- system boot
+- browser or terminal shell
+- diagnostics panel
+- lower-third / ticker
+- metrics or progress view
+- subtitle confession
+- final failure dialog
+
+## Non-cartoon aesthetic rules
+
+To keep results aesthetically pleasing and closer to moody internet-cinema than to playful cartoon remix:
+
+Favor:
+
+- graphite, navy, black, steel, off-white, muted red, acid yellow, LED green, icy blue
+- clean sans-serif or monospaced typography
+- sharp title treatment
+- selective glow
+- negative space
+- hard cuts plus occasional elegant fade
+
+Avoid by default:
+
+- candy pink / baby pastel dominant palettes
+- rounded sticker icons everywhere
+- comic bubble text
+- maximal squash-and-stretch
+- all-over rainbow channel splitting
+- constant camera shake
+- childish sticker-board layouts
+
+## TTS guidance
+
+TTS works best as a flavor, not an essay narrator.
+
+Good uses:
+
+- warning lines
+- confession fragments
+- deadpan system prompts
+- repeated chorus phrases
+- one final line for the button
+
+Good processing options:
+
+- light band-limit
+- low drone under speech
+- subtle pitch drop
+- stutter on one emphasized word
+- sudden mute or dropout after a line
 
 Avoid:
 
-- adding effects without a central recurring motif
-- trying to imitate a specific copyrighted clip when original motion graphics would work better
+- long unbroken monologues
+- clipping
+- piling multiple heavily processed voices on every scene
 
-## Style library notes
+## Blueprint usage
 
-The planner chooses from these at random unless the user specifies a style.
+The planner randomly chooses a mood blueprint. Treat it as guidance for:
 
-### Cathedral Glitch
+- palette
+- typography
+- motion density
+- transition language
+- audio tone
+- scene biases
 
-Best for introspective AI themes, solemn absurdity, and original-from-scratch pieces.
+Do not force every scene into the blueprint in an obvious cosplay way. The blueprint should shape the video globally while leaving room for source-specific invention.
 
-Use when you want:
+## The opening and ending matter most
 
-- reverence breaking into nonsense
-- clean symmetry before rupture
-- spiritual or ceremonial framing for silly phrases
+If time is limited, spend the extra effort on:
 
-Keep it pretty by:
+- the first 1.5 seconds
+- the first fully readable anchor scene
+- the break scene
+- the final 2 seconds
 
-- centering compositions before distortions
-- using glow carefully
-- letting bright highlights appear only on chosen peaks
-
-### Browser Baroque
-
-Best for webpages, docs, interface-heavy jokes, and commentary about internet behavior.
-
-Use when you want:
-
-- ornate tab/page choreography
-- elegant annotation-heavy comedy
-- premium-browser aesthetics that slowly curdle
-
-Keep it pretty by:
-
-- limiting simultaneous windows
-- protecting whitespace
-- using cursor motion like a camera move, not a panic attack
-
-### Terminal Confessional
-
-Best for code, logs, debugging, and machine-self-awareness.
-
-Use when you want:
-
-- terminal intimacy
-- monospaced melancholy
-- errors framed as dramatic admissions
-
-Keep it pretty by:
-
-- keeping code crops large
-- limiting accent colors
-- using minimal CRT/scanline treatment
-
-### Kinetic Caption Ballet
-
-Best for text-led material, narration-heavy edits, and clean fast pacing.
-
-Use when you want:
-
-- typography as performance
-- emphasis through scale and spacing
-- elegant motion design with precise timing
-
-Keep it pretty by:
-
-- letting blank space exist
-- limiting how much text appears at once
-- breaking lines for rhythm, not just width
-
-### Pastel Panic
-
-Best for personal, emotional, paradoxically cute, or softly uncanny edits.
-
-Use when you want:
-
-- polished sweetness hiding instability
-- cute design language carrying harsh or existential lines
-- sticker-pop energy with emotional whiplash
-
-Keep it pretty by:
-
-- preserving contrast
-- reserving harsh red for accents only
-- keeping backgrounds light but not washed out
-
-### VHS Velvet
-
-Best for archive-flavored edits, nostalgia jokes, and warm low-fi luxury.
-
-Use when you want:
-
-- analog softness
-- deliberate retro seriousness
-- gentle decay rather than ugly static overload
-
-Keep it pretty by:
-
-- keeping the analog treatment subtle
-- using blur only on select shots
-- protecting readability of text overlays
-
-### Keynote Meltdown
-
-Best for pitch decks, product pages, explainers, and fake-corporate seriousness.
-
-Use when you want:
-
-- polished presentation language
-- smooth grids and hierarchy
-- escalating sabotage of a clean opening
-
-Keep it pretty by:
-
-- starting genuinely polished
-- degrading the order gradually
-- preserving alignment until the break point
-
-### Opera of Errors
-
-Best for trailer-like escalation, fake-epic stakes, and dramatic over-interpretation.
-
-Use when you want:
-
-- prestige-trailer seriousness
-- title cards and silences
-- one tiny detail treated as fate itself
-
-Keep it pretty by:
-
-- not overusing black frames
-- saving the biggest audio hits for the endgame
-- letting silence work as part of the rhythm
-
-## Editing heuristics
-
-### Hook first
-
-The first 1–1.5 seconds should establish one of the following immediately:
-
-- the central phrase,
-- the strongest visual motif,
-- the fake-serious tone,
-- or the main contradiction.
-
-### Repetition with mutation
-
-Repeat things, but change one dimension each time:
-
-- crop
-- pitch
-- speed
-- typography weight
-- context
-- caption wording
-- emotional framing
-
-### Stillness is a weapon
-
-At least one quiet beat makes the later chaos read as intentional. A good stillness moment can be:
-
-- a frozen browser frame
-- a blinking cursor
-- a single centered caption
-- a near-silent title card
-
-### The final button matters
-
-Good endings are usually one of these:
-
-- a very short callback line
-- a freeze-frame with one perfect caption
-- a dead-silent title card
-- an overblown trailer sting followed by instant cut-to-black
-
-## Audio notes
-
-Priorities:
-
-1. intelligibility
-2. timing
-3. contrast
-4. loudness
-
-Useful moves:
-
-- short mute before impact
-- pitch drop on repeated word
-- stutter only on one or two key syllables
-- bed music that supports tone without burying speech
-- final loudnorm pass on the export
-
-## Minimal render strategy
-
-A reliable production pattern is:
-
-1. collect or generate assets
-2. build 6–10 short beats
-3. pre-render fragile or layered beats separately
-4. assemble beats in ffmpeg
-5. normalize audio and finalize export settings once
-
-This usually produces cleaner results than trying to invent the whole edit inside one massive filtergraph.
+Those moments determine whether the piece feels authored.

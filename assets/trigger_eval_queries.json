@@ -1,66 +1,66 @@
 [
   {
-    "query": "turn this landing page into a weird but beautiful youtube poop short and render it with ffmpeg",
+    "query": "can you use whatever resources you like, and python, to generate a short 'youtube poop' video and render it using ffmpeg ? can you put more of a personal spin on it? it should express what it's like to be a LLM",
     "should_trigger": true
   },
   {
-    "query": "i pasted some code below — make an absurd little montage out of it like the repo is having a breakdown",
+    "query": "make a weird reflective ffmpeg short from this README and some generated motion graphics",
     "should_trigger": true
   },
   {
-    "query": "can you make a cursed trailer from this spec doc with more personality",
+    "query": "turn this landing page into a cursed 30 second montage with a strong POV",
     "should_trigger": true
   },
   {
-    "query": "make me a hyper-edited meme video from this article url",
+    "query": "I want a self-aware AI meme edit from scratch, rendered with python and ffmpeg",
     "should_trigger": true
   },
   {
-    "query": "take these notes and produce a short self-aware ai remix video",
+    "query": "make this codebase feel like a guilty machine confession in video form",
     "should_trigger": true
   },
   {
-    "query": "i don't have source files, just make a polished youtube poop about startup life",
+    "query": "give this article the youtube poop treatment but keep it beautiful",
     "should_trigger": true
   },
   {
-    "query": "turn this transcript into a fast absurd montage with readable captions",
+    "query": "hyper-edit these screenshots into an absurd but polished short",
     "should_trigger": true
   },
   {
-    "query": "render a chaotic ffmpeg short from this README, but make it aesthetically pleasing",
+    "query": "make a glitch-poetry supercut from this transcript and add some subtle TTS",
     "should_trigger": true
   },
   {
-    "query": "trim the silence from this podcast episode and export mp3",
+    "query": "I need this mp4 trimmed to 18 seconds with no other changes",
     "should_trigger": false
   },
   {
-    "query": "please add subtitles to this interview video",
+    "query": "add subtitles to this webinar recording",
     "should_trigger": false
   },
   {
-    "query": "make a normal product demo from our homepage screenshots",
+    "query": "create a clean corporate explainer video from this deck",
     "should_trigger": false
   },
   {
-    "query": "write a python script that uses ffmpeg to resize a batch of videos",
+    "query": "make a calm educational animation about neural networks",
     "should_trigger": false
   },
   {
-    "query": "summarize this webpage into bullet points",
+    "query": "compress this video for email",
     "should_trigger": false
   },
   {
-    "query": "create a calm explainer animation for our quarterly results",
+    "query": "extract key frames from this clip",
     "should_trigger": false
   },
   {
-    "query": "clean up the audio in this recording and remove background noise",
+    "query": "design a regular youtube thumbnail",
     "should_trigger": false
   },
   {
-    "query": "i need a standard youtube intro with logo and slogan",
+    "query": "make this page easier to read",
     "should_trigger": false
   }
 ]

@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "warning-card",
+    "role": "opener",
+    "description": "A stark warning or status card that states the premise before context arrives.",
+    "best_for": [
+      "text",
+      "none",
+      "webpage",
+      "document",
+      "mixed"
+    ],
+    "tags": [
+      "any",
+      "ai-self-reflection",
+      "news",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      0.8,
+      1.4
+    ],
+    "visual_devices": [
+      "full-frame text",
+      "small corner bug",
+      "safe margins",
+      "minimal texture"
+    ],
+    "audio_devices": [
+      "one hit",
+      "air tone",
+      "short TTS line"
+    ]
+  },
+  {
+    "id": "boot-sequence",
+    "role": "opener",
+    "description": "A terminal or system boot scene that rapidly establishes a machine point of view.",
+    "best_for": [
+      "code",
+      "none",
+      "text",
+      "mixed"
+    ],
+    "tags": [
+      "ai-self-reflection",
+      "code",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      0.9,
+      1.8
+    ],
+    "visual_devices": [
+      "monospace logs",
+      "status lights",
+      "cursor blink"
+    ],
+    "audio_devices": [
+      "clicks",
+      "hum",
+      "boot chime fragment"
+    ]
+  },
+  {
+    "id": "whispered-title",
+    "role": "opener",
+    "description": "A nearly empty frame with a soft, ominous title or subtitle line.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "audio"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.8,
+      1.5
+    ],
+    "visual_devices": [
+      "large centered type",
+      "dark field",
+      "subtle glow"
+    ],
+    "audio_devices": [
+      "whisper TTS",
+      "low drone",
+      "silence"
+    ]
+  },
+  {
+    "id": "cold-browser-open",
+    "role": "opener",
+    "description": "A browser frame already parked on the funniest or most loaded region of a page.",
+    "best_for": [
+      "webpage",
+      "document",
+      "mixed"
+    ],
+    "tags": [
+      "webpage",
+      "interface"
+    ],
+    "duration_hint_sec": [
+      0.8,
+      1.5
+    ],
+    "visual_devices": [
+      "browser chrome",
+      "cursor frozen",
+      "tight crop"
+    ],
+    "audio_devices": [
+      "UI click",
+      "short mute cut"
+    ]
+  },
+  {
+    "id": "countdown-slate",
+    "role": "opener",
+    "description": "A dramatic countdown or slate that over-promises the next scene.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "trailer",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      0.7,
+      1.3
+    ],
+    "visual_devices": [
+      "numbers",
+      "title card",
+      "black field"
+    ],
+    "audio_devices": [
+      "impact",
+      "sub hit"
+    ]
+  },
+  {
+    "id": "terminal-confession",
+    "role": "anchor",
+    "description": "A terminal scene where logs or prompts read like a confession.",
+    "best_for": [
+      "code",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "code",
+      "ai-self-reflection",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      1.8,
+      3.8
+    ],
+    "visual_devices": [
+      "terminal pane",
+      "highlighted line",
+      "cursor",
+      "status labels"
+    ],
+    "audio_devices": [
+      "hum",
+      "typed clicks",
+      "short TTS"
+    ]
+  },
+  {
+    "id": "prompt-loop",
+    "role": "anchor",
+    "description": "An exchange between prompt, system, and response that escalates into contradiction.",
+    "best_for": [
+      "text",
+      "code",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "ai-self-reflection",
+      "code",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      1.7,
+      3.6
+    ],
+    "visual_devices": [
+      "chat panel",
+      "terminal or browser wrapper",
+      "role labels"
+    ],
+    "audio_devices": [
+      "voice alternation",
+      "notification pips",
+      "mute cut"
+    ]
+  },
+  {
+    "id": "token-stream",
+    "role": "anchor",
+    "description": "Words or tokens appear one at a time with confidence, probability, or status overlays.",
+    "best_for": [
+      "text",
+      "none",
+      "code",
+      "mixed"
+    ],
+    "tags": [
+      "ai-self-reflection",
+      "interiority",
+      "data"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.2
+    ],
+    "visual_devices": [
+      "highlighted tokens",
+      "progress bar",
+      "probability notes"
+    ],
+    "audio_devices": [
+      "ticks",
+      "small synth pulse",
+      "breathy line"
+    ]
+  },
+  {
+    "id": "error-wall",
+    "role": "anchor",
+    "description": "Stacking warnings or errors that become emotional rather than technical.",
+    "best_for": [
+      "code",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "code",
+      "ai-self-reflection",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      1.5,
+      3.0
+    ],
+    "visual_devices": [
+      "error stack",
+      "duplicate offsets",
+      "red highlights"
+    ],
+    "audio_devices": [
+      "buzz",
+      "stutter",
+      "alarm pip"
+    ]
+  },
+  {
+    "id": "browser-scroll",
+    "role": "anchor",
+    "description": "A page scroll that reveals the source while building a specific argument.",
+    "best_for": [
+      "webpage",
+      "document",
+      "mixed"
+    ],
+    "tags": [
+      "webpage",
+      "interface"
+    ],
+    "duration_hint_sec": [
+      1.8,
+      3.5
+    ],
+    "visual_devices": [
+      "scroll capture",
+      "callouts",
+      "crop jumps",
+      "cursor motion"
+    ],
+    "audio_devices": [
+      "scroll noise",
+      "click",
+      "brief TTS"
+    ]
+  },
+  {
+    "id": "lower-third-fever",
+    "role": "anchor",
+    "description": "An overly serious lower-third or headline package framing a simple claim.",
+    "best_for": [
+      "text",
+      "webpage",
+      "document",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "news",
+      "interiority",
+      "interface"
+    ],
+    "duration_hint_sec": [
+      1.3,
+      2.8
+    ],
+    "visual_devices": [
+      "lower-thirds",
+      "corner bug",
+      "ticker or bug"
+    ],
+    "audio_devices": [
+      "news sting",
+      "bass hit",
+      "announcer TTS"
+    ]
+  },
+  {
+    "id": "subtitle-confession",
+    "role": "anchor",
+    "description": "A confessional line delivered primarily through subtitles or captions.",
+    "best_for": [
+      "text",
+      "audio",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.0
+    ],
+    "visual_devices": [
+      "large subtitles",
+      "sparse background",
+      "secondary whisper notes"
+    ],
+    "audio_devices": [
+      "whisper TTS",
+      "dropout",
+      "low pad"
+    ]
+  },
+  {
+    "id": "attention-map",
+    "role": "anchor",
+    "description": "A heatmap, grid, or focus diagram that reveals the piece’s obsession.",
+    "best_for": [
+      "code",
+      "document",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "data",
+      "ai-self-reflection",
+      "code"
+    ],
+    "duration_hint_sec": [
+      1.7,
+      3.0
+    ],
+    "visual_devices": [
+      "grid",
+      "labels",
+      "hot spots",
+      "small notes"
+    ],
+    "audio_devices": [
+      "soft ticks",
+      "hum",
+      "minimal rise"
+    ]
+  },
+  {
+    "id": "dashboard-counter",
+    "role": "anchor",
+    "description": "A metrics or dashboard scene where numbers replace feelings.",
+    "best_for": [
+      "webpage",
+      "document",
+      "text",
+      "none",
+      "mixed",
+      "code"
+    ],
+    "tags": [
+      "data",
+      "interface",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.0
+    ],
+    "visual_devices": [
+      "cards",
+      "counters",
+      "gauges",
+      "redline"
+    ],
+    "audio_devices": [
+      "relay clicks",
+      "meter pulse",
+      "short TTS"
+    ]
+  },
+  {
+    "id": "headline-board",
+    "role": "anchor",
+    "description": "A cluster or sequence of headlines that becomes feverish or ironic.",
+    "best_for": [
+      "webpage",
+      "document",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "news",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      1.5,
+      3.0
+    ],
+    "visual_devices": [
+      "stacked headlines",
+      "ticker",
+      "flash cards"
+    ],
+    "audio_devices": [
+      "news hum",
+      "static",
+      "impact"
+    ]
+  },
+  {
+    "id": "code-zoom",
+    "role": "anchor",
+    "description": "A readable code crop that zooms into one fateful token or comment.",
+    "best_for": [
+      "code",
+      "mixed"
+    ],
+    "tags": [
+      "code"
+    ],
+    "duration_hint_sec": [
+      1.4,
+      2.8
+    ],
+    "visual_devices": [
+      "syntax highlight",
+      "cursor punch",
+      "line emphasis"
+    ],
+    "audio_devices": [
+      "typed click",
+      "tiny boom",
+      "silence after cut"
+    ]
+  },
+  {
+    "id": "weight-field",
+    "role": "anchor",
+    "description": "A field of parameters, weights, or tiny values treated like a landscape.",
+    "best_for": [
+      "code",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "data",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.0
+    ],
+    "visual_devices": [
+      "tiny numbers",
+      "density fields",
+      "glow accents"
+    ],
+    "audio_devices": [
+      "hum",
+      "sparkle noise",
+      "low tone"
+    ]
+  },
+  {
+    "id": "waveform-interrogation",
+    "role": "anchor",
+    "description": "An audio-led scene where a waveform or transcript becomes accusatory or intimate.",
+    "best_for": [
+      "audio",
+      "text",
+      "mixed",
+      "none"
+    ],
+    "tags": [
+      "audio",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.0
+    ],
+    "visual_devices": [
+      "waveform",
+      "speaker labels",
+      "caption sync"
+    ],
+    "audio_devices": [
+      "speech fragment",
+      "clicks",
+      "mute cuts"
+    ]
+  },
+  {
+    "id": "surveillance-quote",
+    "role": "anchor",
+    "description": "A quote or line framed like recovered footage or monitored text.",
+    "best_for": [
+      "text",
+      "document",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "interiority",
+      "news"
+    ],
+    "duration_hint_sec": [
+      1.5,
+      2.8
+    ],
+    "visual_devices": [
+      "timestamp",
+      "REC bug",
+      "crop box"
+    ],
+    "audio_devices": [
+      "camera hiss",
+      "room tone",
+      "whisper"
+    ]
+  },
+  {
+    "id": "glitch-burst",
+    "role": "bridge",
+    "description": "A very short distortion burst that resets momentum.",
+    "best_for": [
+      "text",
+      "none",
+      "webpage",
+      "code",
+      "document",
+      "mixed",
+      "video",
+      "audio"
+    ],
+    "tags": [
+      "any"
+    ],
+    "duration_hint_sec": [
+      0.25,
+      0.7
+    ],
+    "visual_devices": [
+      "channel split",
+      "slice shift",
+      "noise block"
+    ],
+    "audio_devices": [
+      "zip",
+      "static click",
+      "dropout"
+    ]
+  },
+  {
+    "id": "black-frame-whisper",
+    "role": "bridge",
+    "description": "A blackout or near-black interruption carrying a single whispered line or subtitle.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "audio"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.35,
+      0.9
+    ],
+    "visual_devices": [
+      "black field",
+      "small subtitle",
+      "single word"
+    ],
+    "audio_devices": [
+      "whisper",
+      "silence",
+      "reverb tail"
+    ]
+  },
+  {
+    "id": "freeze-zoom",
+    "role": "bridge",
+    "description": "A freeze-frame punch-in that isolates a detail for absurd emphasis.",
+    "best_for": [
+      "image",
+      "video",
+      "webpage",
+      "document",
+      "mixed",
+      "code"
+    ],
+    "tags": [
+      "webpage",
+      "code",
+      "interface"
+    ],
+    "duration_hint_sec": [
+      0.35,
+      0.9
+    ],
+    "visual_devices": [
+      "freeze",
+      "crop punch",
+      "arrow or circle"
+    ],
+    "audio_devices": [
+      "impact",
+      "mute",
+      "click"
+    ]
+  },
+  {
+    "id": "cursor-hold",
+    "role": "bridge",
+    "description": "A still or almost-still frame with a blinking cursor or pointer.",
+    "best_for": [
+      "code",
+      "webpage",
+      "none",
+      "text",
+      "mixed"
+    ],
+    "tags": [
+      "code",
+      "interface",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      0.4,
+      1.0
+    ],
+    "visual_devices": [
+      "idle cursor",
+      "clean frame",
+      "minimal motion"
+    ],
+    "audio_devices": [
+      "hum",
+      "tiny click",
+      "silence"
+    ]
+  },
+  {
+    "id": "notification-storm",
+    "role": "bridge",
+    "description": "A short burst of popups, notifications, or labels that escalates the anxiety.",
+    "best_for": [
+      "webpage",
+      "none",
+      "text",
+      "mixed",
+      "document"
+    ],
+    "tags": [
+      "interface",
+      "news"
+    ],
+    "duration_hint_sec": [
+      0.4,
+      1.0
+    ],
+    "visual_devices": [
+      "popups",
+      "stacked cards",
+      "small badges"
+    ],
+    "audio_devices": [
+      "notification pips",
+      "small stutters",
+      "soft alarm"
+    ]
+  },
+  {
+    "id": "signal-loss",
+    "role": "bridge",
+    "description": "A signal-loss or damaged-broadcast card that acts like a punctuation mark.",
+    "best_for": [
+      "webpage",
+      "text",
+      "none",
+      "mixed",
+      "document",
+      "video"
+    ],
+    "tags": [
+      "news",
+      "any"
+    ],
+    "duration_hint_sec": [
+      0.35,
+      0.9
+    ],
+    "visual_devices": [
+      "static",
+      "test card",
+      "lost signal copy"
+    ],
+    "audio_devices": [
+      "static burst",
+      "hum",
+      "mute"
+    ]
+  },
+  {
+    "id": "vhs-timecode",
+    "role": "bridge",
+    "description": "A timestamped analog interruption used sparingly to suggest found footage.",
+    "best_for": [
+      "video",
+      "image",
+      "text",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "archive",
+      "interiority"
+    ],
+    "duration_hint_sec": [
+      0.35,
+      0.9
+    ],
+    "visual_devices": [
+      "REC bug",
+      "timestamp",
+      "soft scanline"
+    ],
+    "audio_devices": [
+      "tape hiss",
+      "click"
+    ]
+  },
+  {
+    "id": "static-card",
+    "role": "bridge",
+    "description": "A text or symbol card with a burst of texture, used like punctuation.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "document"
+    ],
+    "tags": [
+      "any"
+    ],
+    "duration_hint_sec": [
+      0.3,
+      0.8
+    ],
+    "visual_devices": [
+      "single word",
+      "symbol",
+      "rough texture"
+    ],
+    "audio_devices": [
+      "hit",
+      "mute",
+      "noise tick"
+    ]
+  },
+  {
+    "id": "empty-progress-bar",
+    "role": "break",
+    "description": "A pause scene built around waiting, loading, or incompletion.",
+    "best_for": [
+      "text",
+      "none",
+      "code",
+      "webpage",
+      "mixed"
+    ],
+    "tags": [
+      "interiority",
+      "interface",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.9,
+      1.8
+    ],
+    "visual_devices": [
+      "progress bar",
+      "spinner",
+      "clean dark field"
+    ],
+    "audio_devices": [
+      "low hum",
+      "tick",
+      "silence"
+    ]
+  },
+  {
+    "id": "single-line-hold",
+    "role": "break",
+    "description": "A single line on screen long enough to really land.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "audio",
+      "document"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.0,
+      2.2
+    ],
+    "visual_devices": [
+      "single sentence",
+      "negative space",
+      "simple type"
+    ],
+    "audio_devices": [
+      "silence",
+      "low pad",
+      "short whisper"
+    ]
+  },
+  {
+    "id": "frozen-browser",
+    "role": "break",
+    "description": "A clean held browser or document frame that lets the audience actually look.",
+    "best_for": [
+      "webpage",
+      "document",
+      "mixed"
+    ],
+    "tags": [
+      "webpage",
+      "interface"
+    ],
+    "duration_hint_sec": [
+      1.0,
+      2.0
+    ],
+    "visual_devices": [
+      "still page crop",
+      "cursor idle",
+      "one callout"
+    ],
+    "audio_devices": [
+      "room tone",
+      "single click",
+      "light pad"
+    ]
+  },
+  {
+    "id": "chorus-stack",
+    "role": "climax",
+    "description": "Multiple repeated lines or panels stack into a controlled overload.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "audio",
+      "document"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.4
+    ],
+    "visual_devices": [
+      "duplicate captions",
+      "stacked cards",
+      "overprint"
+    ],
+    "audio_devices": [
+      "layered voice",
+      "rising tone",
+      "stutter"
+    ]
+  },
+  {
+    "id": "contradiction-slam",
+    "role": "climax",
+    "description": "Two incompatible claims collide in one sharply timed sequence.",
+    "best_for": [
+      "text",
+      "webpage",
+      "code",
+      "document",
+      "none",
+      "mixed"
+    ],
+    "tags": [
+      "any",
+      "interiority",
+      "news",
+      "code"
+    ],
+    "duration_hint_sec": [
+      1.5,
+      3.0
+    ],
+    "visual_devices": [
+      "hard cut pair",
+      "title slam",
+      "opposed captions"
+    ],
+    "audio_devices": [
+      "impact",
+      "mute cut",
+      "braam or sub hit"
+    ]
+  },
+  {
+    "id": "multi-panel-cascade",
+    "role": "climax",
+    "description": "Several panels or systems appear at once but remain readable for one decisive burst.",
+    "best_for": [
+      "webpage",
+      "document",
+      "code",
+      "mixed",
+      "none"
+    ],
+    "tags": [
+      "interface",
+      "data",
+      "code"
+    ],
+    "duration_hint_sec": [
+      1.6,
+      3.2
+    ],
+    "visual_devices": [
+      "multi-panel layout",
+      "cascading windows",
+      "grid collage"
+    ],
+    "audio_devices": [
+      "panel clicks",
+      "riser",
+      "compressed tone"
+    ]
+  },
+  {
+    "id": "siren-title",
+    "role": "climax",
+    "description": "A huge title or phrase lands like an overblown emergency headline.",
+    "best_for": [
+      "text",
+      "none",
+      "webpage",
+      "mixed"
+    ],
+    "tags": [
+      "news",
+      "trailer",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      1.2,
+      2.5
+    ],
+    "visual_devices": [
+      "giant title",
+      "warning accent",
+      "black or dark field"
+    ],
+    "audio_devices": [
+      "alarm tone",
+      "impact",
+      "voice snippet"
+    ]
+  },
+  {
+    "id": "final-dashboard-redline",
+    "role": "climax",
+    "description": "A final metrics scene spikes or overloads as if the system can no longer stay composed.",
+    "best_for": [
+      "code",
+      "none",
+      "mixed",
+      "document",
+      "text"
+    ],
+    "tags": [
+      "data",
+      "ai-self-reflection",
+      "code"
+    ],
+    "duration_hint_sec": [
+      1.5,
+      2.8
+    ],
+    "visual_devices": [
+      "redline graph",
+      "counter spike",
+      "status alert"
+    ],
+    "audio_devices": [
+      "alarm",
+      "pulse",
+      "dropout"
+    ]
+  },
+  {
+    "id": "deadpan-freeze",
+    "role": "button",
+    "description": "Freeze on the most loaded image or line and let one final thought sit.",
+    "best_for": [
+      "text",
+      "webpage",
+      "document",
+      "code",
+      "image",
+      "video",
+      "none",
+      "mixed",
+      "audio"
+    ],
+    "tags": [
+      "any"
+    ],
+    "duration_hint_sec": [
+      0.9,
+      1.8
+    ],
+    "visual_devices": [
+      "freeze-frame",
+      "small caption",
+      "clean composition"
+    ],
+    "audio_devices": [
+      "audio cut",
+      "room tone",
+      "one short line"
+    ]
+  },
+  {
+    "id": "collapse-to-cursor",
+    "role": "button",
+    "description": "All complexity disappears until only a cursor, prompt, or tiny status remains.",
+    "best_for": [
+      "code",
+      "text",
+      "none",
+      "mixed",
+      "webpage"
+    ],
+    "tags": [
+      "code",
+      "interface",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.8,
+      1.5
+    ],
+    "visual_devices": [
+      "cursor",
+      "terminal",
+      "empty field"
+    ],
+    "audio_devices": [
+      "silence",
+      "click",
+      "hum decay"
+    ]
+  },
+  {
+    "id": "soft-failure-message",
+    "role": "button",
+    "description": "End on a polite failure dialog, status message, or impossible reassurance.",
+    "best_for": [
+      "webpage",
+      "document",
+      "text",
+      "none",
+      "mixed",
+      "code"
+    ],
+    "tags": [
+      "interface",
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.9,
+      1.6
+    ],
+    "visual_devices": [
+      "dialog box",
+      "button",
+      "status line"
+    ],
+    "audio_devices": [
+      "tiny UI sound",
+      "soft tone",
+      "mute"
+    ]
+  },
+  {
+    "id": "final-title-aphorism",
+    "role": "button",
+    "description": "A short final line lands like the moral of a very corrupted fable.",
+    "best_for": [
+      "text",
+      "none",
+      "mixed",
+      "audio",
+      "document"
+    ],
+    "tags": [
+      "interiority",
+      "ai-self-reflection"
+    ],
+    "duration_hint_sec": [
+      0.9,
+      1.8
+    ],
+    "visual_devices": [
+      "title card",
+      "negative space",
+      "plain type"
+    ],
+    "audio_devices": [
+      "whisper",
+      "decay",
+      "silence"
+    ]
+  }
+]

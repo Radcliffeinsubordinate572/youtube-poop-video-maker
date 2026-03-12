@@ -2,39 +2,43 @@
 
 Review the render before returning it.
 
-## Concept
+## Concept and structure
 
-- [ ] The piece has one clear thesis.
-- [ ] The first 1.5 seconds establish the tone immediately.
-- [ ] The recurring motif appears more than once and changes each time.
-- [ ] The final beat feels intentional and decisive.
+- [ ] The piece has one clear thesis or emotional claim.
+- [ ] The first 1.5 seconds establish the premise or mood immediately.
+- [ ] The runtime contains enough scene changes to feel rich rather than flat.
+- [ ] The recurring motif appears more than once and mutates.
+- [ ] There is at least one break or stillness beat.
+- [ ] The final button feels deliberate and complete.
 
 ## Visual quality
 
-- [ ] The selected style is visible in palette, type, motion, and framing.
+- [ ] The chosen blueprint is visible in palette, typography, motion, and framing.
 - [ ] Captions are readable without pausing.
-- [ ] The frame is not overcrowded.
-- [ ] There is at least one calmer beat that resets the pace.
-- [ ] The palette feels coherent rather than randomly saturated.
-- [ ] Resolution, scaling, and sharpness are consistent across shots.
+- [ ] The frame is controlled rather than overcrowded.
+- [ ] The palette is restrained and coherent.
+- [ ] Glitches feel purposeful, not constant.
+- [ ] The result avoids cartoonish cues unless the user explicitly asked for them.
+- [ ] Resolution, sharpness, and scaling are consistent enough to feel intentional.
+
+## Scene density
+
+- [ ] 20–28s pieces usually have about 9–12 scenes.
+- [ ] 29–40s pieces usually have about 11–15 scenes.
+- [ ] 41–60s pieces usually have about 13–18 scenes.
+- [ ] Thin source material was supplemented with invented support scenes rather than stretched.
 
 ## Audio quality
 
-- [ ] Speech is understandable.
+- [ ] Speech or TTS is understandable.
+- [ ] TTS is used as flavor, not wall-to-wall narration.
 - [ ] Peaks do not clip.
 - [ ] Music and effects support the joke instead of burying it.
+- [ ] Silence or near-silence appears at least once when helpful.
 - [ ] The loudest moment feels earned.
-- [ ] Silence or near-silence is used at least once for contrast when appropriate.
-
-## Comedic rhythm
-
-- [ ] Repetition escalates instead of stagnating.
-- [ ] At least one cut surprises the viewer.
-- [ ] The video does not become random before the premise is clear.
-- [ ] There is no dead air that feels accidental.
 
 ## Export quality
 
 - [ ] Final file plays cleanly.
-- [ ] The export uses a widely compatible format.
-- [ ] The last frame or cut does not feel truncated by accident.
+- [ ] Export uses a widely compatible format.
+- [ ] The last frame or cut does not feel accidentally truncated.

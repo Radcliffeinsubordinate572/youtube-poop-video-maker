@@ -15,14 +15,17 @@ Skill entrypoint:
 It is optimized for:
 - YouTube poops
 - cursed trailers
+- glitch-poetry or reflective meme edits
 - surreal montage edits
 - self-aware AI collages
-- chaotic but readable 20-60 second parody videos
+- chaotic but readable 20-60 second parody videos with many micro-scenes
 
 The skill includes:
 - a procedural `SKILL.md` with trigger rules and workflow
 - `scripts/plan_video.py` for generating a structured production plan
 - `assets/style_blueprints.json` for randomized visual-comedic styles
+- `assets/scene_atoms.json` for scene invention and higher edit density
+- `references/MOOD-REFERENCE.md` for mood anchoring
 - references for rendering guidance and final output checks
 
 ## Who It Is For
@@ -66,6 +69,7 @@ git clone https://github.com/DenisSergeevitch/youtube-poop-video-maker.git /tmp/
 - "Make a YouTube poop from this landing page."
 - "Turn this codebase summary into a cursed trailer."
 - "Make this script feel like an AI meltdown montage."
+- "Show what this product launch feels like as a reflective glitch short."
 - "Render a surreal short from this image set and voice memo."
 
 ## Script Overview
