@@ -1,5 +1,53 @@
 [
   {
+    "id": "seed-remix-default",
+    "name": "Seed Remix Default",
+    "one_sentence_direction": "Start from a seeded remix of the bundled styles, borrowing palette, type, motion, transitions, audio, and gag cues from different blueprints each run.",
+    "palette": "Seeded at runtime from another bundled blueprint.",
+    "typography": "Seeded at runtime from another bundled blueprint.",
+    "motion": "Seeded at runtime from another bundled blueprint.",
+    "transitions": "Seeded at runtime from another bundled blueprint.",
+    "audio": "Seeded at runtime from another bundled blueprint.",
+    "scene_bias": [
+      "warning-card",
+      "prompt-loop",
+      "headline-board",
+      "dashboard-counter",
+      "soft-failure-message"
+    ],
+    "signature_gags": [
+      "borrowed visual seriousness colliding with the wrong emotional register",
+      "different systems of presentation interrupting each other on purpose",
+      "one recurring motif mutating as if multiple editors touched the same short"
+    ],
+    "works_well_for": [
+      "text",
+      "webpage",
+      "document",
+      "code",
+      "image",
+      "audio",
+      "video",
+      "mixed",
+      "none",
+      "news",
+      "interface",
+      "data",
+      "ai-self-reflection",
+      "trailer"
+    ],
+    "anti_patterns": [
+      "Do not let the seed remix become a checklist of borrowed tricks.",
+      "Do not sample so many ingredients that the piece loses a dominant mood."
+    ],
+    "guardrails": [
+      "Treat sampled ingredients as prompts, not obligations.",
+      "Let one seed dominate and let the others act as interruptions."
+    ],
+    "seed_strategy": "sample-other-style-parts",
+    "default_style": true
+  },
+  {
     "id": "editorial-glitch-requiem",
     "name": "Editorial Glitch Requiem",
     "one_sentence_direction": "Treat the material like a serious editorial package that keeps slipping into sabotage.",

@@ -1,6 +1,6 @@
 ---
 name: youtube-poop-video-maker
-description: Use this skill when the user wants a short YouTube poop, cursed trailer, glitch-poetry montage, absurd supercut, reflective meme edit, or FFmpeg-rendered remix video from text, webpages, code, documents, media, or from scratch. Activate for prompts like “make this weirder,” “give it a personal spin,” “what it feels like,” “render with ffmpeg,” or self-aware AI / LLM montage requests. The skill plans and renders a dense, aesthetically pleasing 20–60 second video with many micro-scenes, readable typography, restrained neon or analog treatments, controlled audio, optional TTS fragments, and a randomly chosen mood blueprint.
+description: Use this skill when the user wants a short YouTube poop, cursed trailer, glitch-poetry montage, absurd supercut, reflective meme edit, or FFmpeg-rendered remix video from text, webpages, code, documents, media, or from scratch. Activate for prompts like “make this weirder,” “give it a personal spin,” “what it feels like,” “render with ffmpeg,” or self-aware AI / LLM montage requests. The skill plans and renders a dense, aesthetically pleasing 20–60 second video with many micro-scenes, readable typography, restrained neon or analog treatments, controlled audio, optional TTS fragments, and a default seeded-remix blueprint that samples the bundled styles at runtime.
 license: MIT
 compatibility: Python 3 and ffmpeg are required. Pillow and basic media tooling are helpful. Web access is useful for URLs but not required.
 metadata:
@@ -39,7 +39,7 @@ Do not use this skill for routine trimming, simple caption burns, ordinary expla
 
 ## Core promise
 
-This skill should not flatten creativity into a single house style. The random blueprint is a **mood lens**, not a cage.
+This skill should not flatten creativity into a single house style. The default seeded-remix blueprint is a **mood lens**, not a cage.
 
 The finished piece should usually have:
 
@@ -89,9 +89,9 @@ Examples:
 
 Every recurring gag should support that claim.
 
-### 3) Pick a mood blueprint at random
+### 3) Use the default seeded remix unless a style is requested
 
-Unless the user names a style, always randomize the blueprint.
+Unless the user names a style, use the default `seed-remix-default` blueprint. It samples palette, typography, motion, transitions, audio, and gag cues from the other bundled blueprints each run.
 
 Run:
 
@@ -99,7 +99,7 @@ Run:
 python3 scripts/plan_video.py --query "$USER_REQUEST" --material-summary "$MATERIAL_SUMMARY" > plan.json
 ```
 
-If the user explicitly asks for a particular bundled look, override randomness with:
+If the user explicitly asks for a particular bundled look, override the default remix with:
 
 ```bash
 python3 scripts/plan_video.py --query "$USER_REQUEST" --material-summary "$MATERIAL_SUMMARY" --style-id STYLE_ID > plan.json
@@ -107,7 +107,7 @@ python3 scripts/plan_video.py --query "$USER_REQUEST" --material-summary "$MATER
 
 For CRT-newsroom or AI-meltdown looks, prefer the bundled pool entries `crt-token-meltdown`, `headline-seizure-desk`, or `context-window-panic` before inventing a one-off style from scratch.
 
-Use the plan as creative guidance for palette, motion, audio, scene density, and scene invention.
+Use the plan as creative guidance for palette, motion, audio, scene density, and scene invention. When the default remix is used, treat the reported seed sources as prompts, not a checklist.
 
 ### 4) Build a scene swarm, not just a beat sheet
 

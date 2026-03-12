@@ -28,7 +28,10 @@ STOPWORDS = {
     "video", "want", "whatever", "what", "with", "you", "your", "youtube", "ffmpeg"
 }
 
+DEFAULT_STYLE_ID = "seed-remix-default"
+
 STYLE_ANALOGIES = {
+    DEFAULT_STYLE_ID: "a curated style collision that keeps changing editors mid-sentence",
     "editorial-glitch-requiem": "a serious editorial package sabotaging itself in public",
     "terminal-nocturne": "a midnight confession leaking from a terminal",
     "broadcast-fever-dream": "a late-night emergency channel losing composure",
@@ -37,6 +40,9 @@ STYLE_ANALOGIES = {
     "subtitle-exorcism": "a possessed subtitle track arguing with the main image",
     "data-center-lament": "telemetry trying and failing to become emotion",
     "prestige-corruption": "a prestige trailer hijacked by internet logic",
+    "crt-token-meltdown": "a CRT panic crawl trying to survive its own token storm",
+    "headline-seizure-desk": "a newsroom control room frantically rewriting its own script",
+    "context-window-panic": "a model interface panicking about what it can no longer hold",
 }
 
 ANTI_CARTOON_RULES = [
@@ -190,6 +196,146 @@ def score_style(style: Dict[str, Any], material_type: str, tags: List[str]) -> i
     return max(score, 1)
 
 
+def get_style_by_id(styles: List[Dict[str, Any]], style_id: str) -> Dict[str, Any] | None:
+    for style in styles:
+        if style["id"] == style_id:
+            return style
+    return None
+
+
+def get_default_style(styles: List[Dict[str, Any]]) -> Dict[str, Any] | None:
+    for style in styles:
+        if style.get("default_style"):
+            return style
+    return get_style_by_id(styles, DEFAULT_STYLE_ID)
+
+
+def merge_unique_strings(*groups: List[str], limit: int | None = None) -> List[str]:
+    merged: List[str] = []
+    for group in groups:
+        for item in group:
+            if item not in merged:
+                merged.append(item)
+            if limit is not None and len(merged) >= limit:
+                return merged
+    return merged
+
+
+def weighted_pick(candidates: List[Dict[str, Any]], weights: List[int], rng: random.Random) -> Dict[str, Any]:
+    picked = weighted_sample_without_replacement(candidates, weights, 1, rng)
+    if not picked:
+        raise SystemExit("Error: could not select a style candidate.")
+    return picked[0]
+
+
+def build_seed_remix_style(
+    remix_style: Dict[str, Any],
+    styles: List[Dict[str, Any]],
+    material_type: str,
+    tags: List[str],
+    seed: int | None,
+) -> Dict[str, Any]:
+    source_styles = [style for style in styles if style["id"] != remix_style["id"]]
+    if not source_styles:
+        return remix_style
+
+    rng = random.Random(seed) if seed is not None else random.SystemRandom()
+    base_weights = [score_style(style, material_type, tags) for style in source_styles]
+    dominant_style = weighted_pick(source_styles, base_weights, rng)
+
+    secondary_candidates = [style for style in source_styles if style["id"] != dominant_style["id"]]
+    secondary_pool: List[Dict[str, Any]] = []
+    if secondary_candidates:
+        secondary_weights = [score_style(style, material_type, tags) for style in secondary_candidates]
+        secondary_pool = weighted_sample_without_replacement(
+            secondary_candidates,
+            secondary_weights,
+            min(4, len(secondary_candidates)),
+            rng,
+        )
+
+    seed_pool = [dominant_style] + secondary_pool
+
+    def pick_seed_source(prefer_dominant: bool = False, exclude_ids: set[str] | None = None) -> Dict[str, Any]:
+        candidates = [style for style in seed_pool if not exclude_ids or style["id"] not in exclude_ids]
+        if not candidates:
+            candidates = list(seed_pool)
+        weights: List[int] = []
+        for style in candidates:
+            weight = score_style(style, material_type, tags)
+            if style["id"] == dominant_style["id"]:
+                weight += 4 if prefer_dominant else 2
+            weights.append(weight)
+        return weighted_pick(candidates, weights, rng)
+
+    field_sources = {
+        "one_sentence_direction": dominant_style,
+        "palette": pick_seed_source(prefer_dominant=True),
+        "typography": pick_seed_source(),
+        "motion": pick_seed_source(prefer_dominant=True),
+        "transitions": pick_seed_source(),
+        "audio": pick_seed_source(),
+    }
+
+    scene_bias_source = pick_seed_source(exclude_ids={dominant_style["id"]} if len(seed_pool) > 1 else None)
+    gag_source = pick_seed_source()
+    guardrail_source = pick_seed_source(prefer_dominant=True)
+    anti_pattern_source = pick_seed_source()
+
+    remixed_style = dict(remix_style)
+    for field, source_style in field_sources.items():
+        remixed_style[field] = source_style.get(field, remix_style.get(field))
+
+    remixed_style["scene_bias"] = merge_unique_strings(
+        remix_style.get("scene_bias", []),
+        dominant_style.get("scene_bias", [])[:3],
+        scene_bias_source.get("scene_bias", [])[:2],
+        limit=7,
+    )
+    remixed_style["signature_gags"] = merge_unique_strings(
+        remix_style.get("signature_gags", []),
+        dominant_style.get("signature_gags", [])[:2],
+        gag_source.get("signature_gags", [])[:2],
+        limit=6,
+    )
+    remixed_style["guardrails"] = merge_unique_strings(
+        remix_style.get("guardrails", []),
+        dominant_style.get("guardrails", [])[:2],
+        guardrail_source.get("guardrails", [])[:1],
+        limit=6,
+    )
+    remixed_style["anti_patterns"] = merge_unique_strings(
+        remix_style.get("anti_patterns", []),
+        dominant_style.get("anti_patterns", [])[:2],
+        anti_pattern_source.get("anti_patterns", [])[:1],
+        limit=6,
+    )
+    remixed_style["works_well_for"] = merge_unique_strings(
+        remix_style.get("works_well_for", []),
+        dominant_style.get("works_well_for", []),
+    )
+    remixed_style["analogy"] = STYLE_ANALOGIES.get(dominant_style["id"], STYLE_ANALOGIES[DEFAULT_STYLE_ID])
+    remixed_style["dominant_seed_style"] = {
+        "id": dominant_style["id"],
+        "name": dominant_style["name"],
+    }
+    remixed_style["seed_sources"] = {
+        field: {"id": source_style["id"], "name": source_style["name"]}
+        for field, source_style in field_sources.items()
+    }
+    remixed_style["seed_mix_ids"] = merge_unique_strings(
+        [source_style["id"] for source_style in field_sources.values()],
+        [scene_bias_source["id"], gag_source["id"], guardrail_source["id"], anti_pattern_source["id"]],
+    )
+    remixed_style["seed_note"] = (
+        f"Lead seed: {dominant_style['name']}. "
+        f"Palette from {field_sources['palette']['name']}, typography from {field_sources['typography']['name']}, "
+        f"motion from {field_sources['motion']['name']}, transitions from {field_sources['transitions']['name']}, "
+        f"audio from {field_sources['audio']['name']}."
+    )
+    return remixed_style
+
+
 
 def pick_style(
     styles: List[Dict[str, Any]],
@@ -199,11 +345,19 @@ def pick_style(
     tags: List[str],
 ) -> Tuple[Dict[str, Any], int | None]:
     if style_id:
-        matches = [style for style in styles if style["id"] == style_id]
-        if not matches:
+        style = get_style_by_id(styles, style_id)
+        if style is None:
             valid = ", ".join(sorted(style["id"] for style in styles))
             raise SystemExit(f"Error: unknown --style-id '{style_id}'. Valid ids: {valid}")
-        return matches[0], seed
+        if style.get("seed_strategy") == "sample-other-style-parts":
+            return build_seed_remix_style(style, styles, material_type, tags, seed), seed
+        return style, seed
+
+    default_style = get_default_style(styles)
+    if default_style is not None:
+        if default_style.get("seed_strategy") == "sample-other-style-parts":
+            return build_seed_remix_style(default_style, styles, material_type, tags, seed), seed
+        return default_style, seed
 
     rng = random.Random(seed) if seed is not None else random.SystemRandom()
     weights = [score_style(style, material_type, tags) for style in styles]
@@ -650,7 +804,13 @@ def make_plan(args: argparse.Namespace) -> Dict[str, Any]:
     if args.list_styles:
         return {
             "styles": [
-                {"id": style["id"], "name": style["name"], "one_sentence_direction": style["one_sentence_direction"]}
+                {
+                    "id": style["id"],
+                    "name": style["name"],
+                    "one_sentence_direction": style["one_sentence_direction"],
+                    "default_style": bool(style.get("default_style")),
+                    "seed_strategy": style.get("seed_strategy", ""),
+                }
                 for style in styles
             ]
         }
@@ -668,7 +828,8 @@ def make_plan(args: argparse.Namespace) -> Dict[str, Any]:
 
     subject_label = derive_subject_label(material_type, args.query, args.material_summary)
     theme = args.theme.strip() if args.theme.strip() else subject_label
-    thesis_starter = f"This video makes {theme} feel like {STYLE_ANALOGIES.get(style['id'], 'a designed collapse of meaning')}."
+    style_analogy = style.get("analogy") or STYLE_ANALOGIES.get(style["id"], "a designed collapse of meaning")
+    thesis_starter = f"This video makes {theme} feel like {style_analogy}."
     keyword_candidates = extract_keywords(args.query, args.material_summary)
 
     swarm = build_scene_swarm(scene_atoms, material_type, tags, style, args.duration_sec, args.seed)
@@ -741,7 +902,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=34,
         help="Desired runtime in seconds. This skill is optimized for short 20–60 second pieces.",
     )
-    parser.add_argument("--style-id", default="", help="Optional style id to override random selection.")
+    parser.add_argument("--style-id", default="", help="Optional style id to override the default seed-remix selection.")
     parser.add_argument("--seed", type=int, default=None, help="Optional random seed for reproducible selection.")
     parser.add_argument(
         "--aspect-ratio",

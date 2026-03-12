@@ -28,7 +28,7 @@ A free-form prompt like “use whatever resources you like” often produces mor
 This skill should therefore:
 
 - invent bridge scenes even when they were not explicitly requested
-- use the random blueprint as a mood lens rather than rigid template matching
+- use the default seeded remix blueprint as a mood lens rather than rigid template matching
 - prefer scene abundance over one long overworked sequence
 - let the “personal spin” appear in captions, voice, and framing decisions
 

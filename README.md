@@ -23,7 +23,7 @@ It is optimized for:
 The skill includes:
 - a procedural `SKILL.md` with trigger rules and workflow
 - `scripts/plan_video.py` for generating a structured production plan
-- `assets/style_blueprints.json` for randomized visual-comedic styles, including CRT/token-meltdown and overclocked headline-desk looks
+- `assets/style_blueprints.json` for bundled visual-comedic styles, including a default seed-remix blueprint that samples the others at runtime plus CRT/token-meltdown and overclocked headline-desk looks
 - `assets/scene_atoms.json` for scene invention and higher edit density
 - `references/MOOD-REFERENCE.md` for mood anchoring
 - `examples/` for full render examples built around the newer newsroom and terminal panic looks
@@ -86,6 +86,8 @@ Generate a plan from a prompt:
 ```bash
 python3 scripts/plan_video.py --query "turn this pricing page into a cursed short" --material-summary "B2B SaaS pricing page with too many claims" --output plan.json
 ```
+
+By default, that plan now resolves to `seed-remix-default`, which synthesizes a concrete style from the other bundled blueprints on each run.
 
 Generate a reproducible code-themed plan:
 
