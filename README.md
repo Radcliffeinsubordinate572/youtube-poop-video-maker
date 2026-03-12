@@ -23,9 +23,10 @@ It is optimized for:
 The skill includes:
 - a procedural `SKILL.md` with trigger rules and workflow
 - `scripts/plan_video.py` for generating a structured production plan
-- `assets/style_blueprints.json` for randomized visual-comedic styles
+- `assets/style_blueprints.json` for randomized visual-comedic styles, including CRT/token-meltdown and overclocked headline-desk looks
 - `assets/scene_atoms.json` for scene invention and higher edit density
 - `references/MOOD-REFERENCE.md` for mood anchoring
+- `examples/` for full render examples built around the newer newsroom and terminal panic looks
 - references for rendering guidance and final output checks
 
 ## Who It Is For
@@ -89,8 +90,19 @@ python3 scripts/plan_video.py --query "turn this pricing page into a cursed shor
 Generate a reproducible code-themed plan:
 
 ```bash
-python3 scripts/plan_video.py --material-type code --theme "a codebase arguing with itself" --style-id terminal-confessional --duration-sec 40 --seed 7
+python3 scripts/plan_video.py --material-type code --theme "a codebase arguing with itself" --style-id terminal-nocturne --duration-sec 40 --seed 7
 ```
+
+Generate a more chaotic CRT/newsroom plan:
+
+```bash
+python3 scripts/plan_video.py --query "make an AI news meltdown short" --material-summary "March headlines, token streams, prompt loops" --style-id crt-token-meltdown --duration-sec 34
+```
+
+## Example Renders
+
+- `examples/render_us_news_march_12_2026.py` renders a broadcast-style U.S. news fever-dream short.
+- `examples/render_eu_news_march_12_2026_terminal.py` renders a colder terminal-styled EU news montage.
 
 ## License
 

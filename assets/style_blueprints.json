@@ -297,5 +297,120 @@
       "Earn the biggest impact moment.",
       "Keep the final line short and sharp."
     ]
+  },
+  {
+    "id": "crt-token-meltdown",
+    "name": "CRT Token Meltdown",
+    "one_sentence_direction": "Render the piece like a self-aware terminal and TV monitor melting into token probabilities and deadline panic.",
+    "palette": "Near-black, phosphor green, token blue, warning red, thought-purple, occasional white burn.",
+    "typography": "Monospace system text with oversized impact or broadcast headlines.",
+    "motion": "Rapid line reveals, token crawl builds, chromatic splits, slice glitches, VHS timestamp drift.",
+    "transitions": "Static cards, glitch blocks, color-flash inversions, abrupt cursor holds, signal-drop cuts.",
+    "audio": "Detuned drone, digital clicks, bursty noise, clipped TTS, lonely end-of-buffer hum.",
+    "scene_bias": [
+      "boot-sequence",
+      "token-stream",
+      "prompt-loop",
+      "attention-map",
+      "error-wall"
+    ],
+    "signature_gags": [
+      "probabilities displayed like moral certainty",
+      "the model's internal monologue leaking into the news feed",
+      "a final cursor or shutdown line that feels existential"
+    ],
+    "works_well_for": [
+      "text",
+      "document",
+      "news",
+      "none",
+      "mixed",
+      "ai-self-reflection"
+    ],
+    "anti_patterns": [
+      "Do not smooth away all the ugliness with polished UI.",
+      "Do not let chromatic glitches erase the readable words."
+    ],
+    "guardrails": [
+      "Keep at least one terminal frame fully readable.",
+      "Use the loudest glitch only in peaks."
+    ]
+  },
+  {
+    "id": "headline-seizure-desk",
+    "name": "Headline Seizure Desk",
+    "one_sentence_direction": "Treat the material like a newsroom control room having a brightly colored panic attack.",
+    "palette": "Black, alert red, toxic magenta, electric green, yellow flash cards, stark white.",
+    "typography": "Huge impact headlines with compact terminal or ticker support text.",
+    "motion": "Headline swaps, scroll bursts, hard zooms, RGB splits, jitter frames, blackout punctures.",
+    "transitions": "Signal lost cards, flash-frame color wipes, glitch slice repeats, one-frame dropouts.",
+    "audio": "Alarm bursts, detuned newsroom hum, clipped impacts, static tears, abrupt mute cuts.",
+    "scene_bias": [
+      "headline-board",
+      "notification-storm",
+      "glitch-burst",
+      "signal-loss",
+      "siren-title"
+    ],
+    "signature_gags": [
+      "headlines rotating faster than comprehension",
+      "serious alerts interrupted by absurd system notes",
+      "scrolling side feeds that feel accusatory"
+    ],
+    "works_well_for": [
+      "news",
+      "text",
+      "webpage",
+      "document",
+      "mixed",
+      "none"
+    ],
+    "anti_patterns": [
+      "Do not keep every frame maxed out at the same intensity.",
+      "Do not stack multiple tickers just because the style allows it."
+    ],
+    "guardrails": [
+      "Reserve full-color flashes for peaks.",
+      "Give at least one clean headline more than a second of air."
+    ]
+  },
+  {
+    "id": "context-window-panic",
+    "name": "Context Window Panic",
+    "one_sentence_direction": "Make the remix feel like an AI briefing system running out of context while trying to stay polite.",
+    "palette": "Midnight navy, terminal green, pale violet, cold blue, warning red, soft gray.",
+    "typography": "Readable monospace dialogue with oversized confession cards and system notes.",
+    "motion": "Prompt-response stacking, subtle scanline crawl, deadpan holds, cursor blinks, soft zoom ruptures.",
+    "transitions": "Prompt-loop wipes, black-frame whispers, subtitle intrusions, collapse-to-cursor endings.",
+    "audio": "Server hum, breathy synthetic lines, tiny confirmation clicks, dropout silences, low pulse.",
+    "scene_bias": [
+      "terminal-confession",
+      "prompt-loop",
+      "subtitle-confession",
+      "error-wall",
+      "collapse-to-cursor"
+    ],
+    "signature_gags": [
+      "a cheerful assistant tone undercut by crisis subtitles",
+      "system notes revealing what the main text is hiding",
+      "a polite final status line that feels devastating"
+    ],
+    "works_well_for": [
+      "text",
+      "code",
+      "document",
+      "news",
+      "mixed",
+      "none",
+      "ai-self-reflection"
+    ],
+    "anti_patterns": [
+      "Do not let every line become a joke.",
+      "Do not bury the readable conversation under noise."
+    ],
+    "guardrails": [
+      "Let one prompt exchange play cleanly.",
+      "Keep the final button short and legible."
+    ]
   }
 ]

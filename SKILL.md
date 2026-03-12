@@ -105,6 +105,8 @@ If the user explicitly asks for a particular bundled look, override randomness w
 python3 scripts/plan_video.py --query "$USER_REQUEST" --material-summary "$MATERIAL_SUMMARY" --style-id STYLE_ID > plan.json
 ```
 
+For CRT-newsroom or AI-meltdown looks, prefer the bundled pool entries `crt-token-meltdown`, `headline-seizure-desk`, or `context-window-panic` before inventing a one-off style from scratch.
+
 Use the plan as creative guidance for palette, motion, audio, scene density, and scene invention.
 
 ### 4) Build a scene swarm, not just a beat sheet
